@@ -39,7 +39,35 @@ signfct=function(x){
   }
   signx
 }
-
-
 signfct(1)
+# opgaver til del 1
+
+prodvecfct=function(x){
+  xprod=1
+  for(i in 1:length(x)){
+    xprod=x[i]*xprod
+  }
+  xprod
+}
+prodvecfct(c(1,2,2,2))
+#fik den ikke færdig
+fibfct=function(n){
+  xfib=c(0,1)
+
+  
+    for(i in 1:n){
+    xfib[i]=xfib[i-3]+xfib[i-2]
+  }
+  xfib[3]
+}
+
+fibfct(6)
+
+
+
+
+  
+
+
+
 
